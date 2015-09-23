@@ -1,0 +1,22 @@
+{
+"manifest_version": 2,
+    "name": "Bombs to Clocks",
+    "description": "Replaces \"Bombs\" with \"Clocks\"",
+    "version": "420",
+    "icons": { "16": "icon16.png",
+           "48": "icon48.png",
+          "128": "icon128.png",
+          "666": "icon666.png" },
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
